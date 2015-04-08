@@ -1,0 +1,91 @@
+@import "../_variables";
+
+.el-w-corner {
+  &:before {
+    border-width: 100vh 200px 0 0;
+  }
+}
+.container--intro {
+  .container--intro__bg {
+    background-color: $bgDark;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40%;
+  }
+}
+
+.nav-primary {
+  width: 30%;
+}
+
+/*-------------------------------------------------- INTRO START -----------------------------------------------------*/
+.b-intro {
+  float: left;
+  width: 58%;
+}
+.b-intro-img {
+  background: url("../img/intro.jpg") no-repeat center right #000;
+  background-size: cover;
+  width: 42%;
+  height: 100vh;
+  float: right;
+  min-height: 768px;
+  max-width: 570px;
+  position: relative;
+}
+
+/*-------------------------------------------------- INTRO END -------------------------------------------------------*/
+
+/*-------------------------------------------------- PROGRAM START ---------------------------------------------------*/
+.b-afterparty {
+  .b-afterparty__content {
+    margin-left: 223px;
+  }
+}
+/*-------------------------------------------------- PROGRAM END -----------------------------------------------------*/
+
+/*-------------------------------------------------- AUDIENCE START --------------------------------------------------*/
+.sb-audience {
+  width: 27%;
+  .sb-audience__content {
+    float: right;
+  }
+}
+.b-audience {
+  margin-left: 27%;
+  .b-audience__content {
+    margin-left: 233px;
+  }
+}
+/*-------------------------------------------------- AUDIENCE END  ---------------------------------------------------*/
+
+/*-------------------------------------------------- TICKETS START ---------------------------------------------------*/
+.container--tickets {
+  .container-inner {
+    display: table;
+    height: 100%;
+  }
+}
+.b-ticket {
+  display: table-cell;
+  min-height: 768px;
+  height: 100vh;
+  width: 33.3%;
+  float: left;
+  .b-ticket__content {
+    min-height: 440px;
+  }
+}
+/*-------------------------------------------------- TICKETS END -----------------------------------------------------*/
+
+/*-------------------------------------------------- VIDEO START -----------------------------------------------------*/
+.b-video {
+  li {
+    width: 25%;
+  }
+  .b-video__title {
+    width: 89.5%;
+  }
+}
+/*-------------------------------------------------- VIDEO END -------------------------------------------------------*/

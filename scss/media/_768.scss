@@ -1,0 +1,210 @@
+@import "../_variables";
+
+h2 {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.container-vh {
+  min-height: 100vh;
+}
+
+.container--intro {
+  .container-inner {
+    min-height: 768px;
+  }
+}
+.container--speakers {
+  .section-title {
+    text-align: left;
+  }
+}
+.container--audience {
+  .container-inner {
+    min-height: 768px;
+  }
+  .container--audience__bg {
+    background-color: $bgDark;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.nav-fixed {
+  right: 96px;
+}
+
+.el-w-corner {
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100vh 100px 0 0;
+    border-color: $bgBright transparent transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.menu-sidebar {
+  &.menu-sidebar--audience {
+    text-align: left;
+    width: 195px;
+  }
+  &.menu-sidebar--speakers {
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: left;
+    li {
+      margin: 0 15px;
+    }
+  }
+}
+
+.nav-primary {
+  width: 45%;
+}
+
+/*-------------------------------------------------- MODAL START -----------------------------------------------------*/
+.b-modal {
+  .b-modal__btn-holder {
+    float: left;
+    width: 45%;
+  }
+  .b-modal__share {
+    float: right;
+    margin-top: 11px;
+  }
+  .btn {
+    margin: 0;
+  }
+}
+/*-------------------------------------------------- MODAL END -------------------------------------------------------*/
+
+/*-------------------------------------------------- INTRO START -----------------------------------------------------*/
+.b-intro {
+  padding-left: 8%;
+  padding-right: 0;
+  height: 100vh;
+  .b-intro__title {
+    font-size: 130px;
+    line-height: 99px;
+  }
+  .b-intro__small {
+    font-size: 40px;
+  }
+  .b-intro__letter-fix {
+    margin-left: 17px;
+    margin-right: -29px;
+  }
+  .b-intro__btn-holder {
+    margin-bottom: 60px;
+  }
+}
+/*-------------------------------------------------- INTRO END -------------------------------------------------------*/
+
+/*-------------------------------------------------- PROGRAM START ---------------------------------------------------*/
+.b-afterparty {
+  background-color: transparent;
+  width: auto;
+  .b-afterparty__close {
+    display: none;
+  }
+  .b-afterparty__content {
+    margin-left: 190px;
+  }
+}
+.b-program {
+  margin-left: 265px;
+  .section-title {
+    text-align: left;
+  }
+}
+.sb-program {
+  float: left;
+  width: 165px;
+  text-align: left;
+  li {
+    display: block;
+  }
+}
+/*-------------------------------------------------- PROGRAM END -----------------------------------------------------*/
+
+/*-------------------------------------------------- AUDIENCE START --------------------------------------------------*/
+.sb-audience {
+  float: left;
+  padding-top: 75px;
+  width: 290px;
+  position: relative;
+  z-index: 2;
+  .section-title {
+    text-align: left;
+    white-space: nowrap;
+  }
+  .sb-audience__content {
+    width: 260px;
+    margin: 0 auto;
+    float: none;
+    padding-left: 0;
+  }
+  li {
+    display: block;
+  }
+}
+.b-audience {
+  margin-left: 300px;
+  height: 100vh;
+  min-height: 768px;
+  .b-audience__item {
+    min-height: 768px;
+  }
+  .b-audience__content {
+    margin-left: 120px;
+  }
+}
+/*-------------------------------------------------- AUDIENCE END  ---------------------------------------------------*/
+
+/*-------------------------------------------------- VIDEO START -----------------------------------------------------*/
+.b-video {
+  li {
+    width: 33.3%;
+  }
+  .b-video__title {
+    width: 92%;
+  }
+}
+/*-------------------------------------------------- VIDEO END -------------------------------------------------------*/
+
+/*-------------------------------------------------- NEWS START ------------------------------------------------------*/
+.h-news-row {
+  margin-bottom: 60px;
+}
+.b-news {
+  width: 46%;
+  float: right;
+  margin-bottom: 0;
+  &:first-child {
+    float: left;
+  }
+}
+/*-------------------------------------------------- NEWS END --------------------------------------------------------*/
+
+/*-------------------------------------------------- FOOTER START ----------------------------------------------------*/
+.footer-col {
+  display: table-cell;
+  vertical-align: middle;
+  width: 380px;
+  height: 58px;
+  padding: 0;
+}
+.b-organizer {
+  text-align: left;
+}
+.b-contact {
+  text-align: right;
+}
+/*-------------------------------------------------- FOOTER END ------------------------------------------------------*/
